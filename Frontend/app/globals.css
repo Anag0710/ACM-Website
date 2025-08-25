@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-white text-gray-900;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-acm-blue text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors duration-200;
+  }
+  
+  .btn-secondary {
+    @apply bg-white text-acm-blue border-2 border-acm-blue px-6 py-3 rounded-lg font-semibold hover:bg-acm-blue hover:text-white transition-colors duration-200;
+  }
+  
+  .section-padding {
+    @apply px-4 sm:px-6 lg:px-8 py-16;
+  }
+  
+  .container-max {
+    @apply max-w-7xl mx-auto;
+  }
+}
